@@ -24,3 +24,8 @@ int main() {
     printf("Test Case 1:\nExpected: %.6f units\nActual: %.6f units\n", expectedDilatedTime1, dilatedTime1);
     printf("Result: %s\n\n", (fabs(dilatedTime1 - expectedDilatedTime1) < 0.000001) ? "Passed" : "Failed");
 
+    double dilatedTime2 = lorentzTimeDilation(2.5, 0.10);
+    double expectedDilatedTime2 = 2.502520; // Corrected expected value
+    printf("Test Case 2:\nExpected: %.6f units\nActual: %.6f units\n", expectedDilatedTime2, dilatedTime2);
+    printf("Result: %s\n\n", (fabs(dilatedTime2 - expectedDilatedTime2) < 0.000001) ? "Passed" : "Failed");
+
