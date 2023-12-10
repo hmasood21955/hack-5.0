@@ -8,3 +8,9 @@ double toRadians(double degree) {
     return degree * (M_PI / 180.0);
 }
 
+double getAirDistance(double originLatitude, double originLongitude, double destinationLatitude, double destinationLongitude) {
+    originLatitude = toRadians(originLatitude);
+    originLongitude = toRadians(originLongitude);
+    destinationLatitude = toRadians(destinationLatitude);
+    destinationLongitude = toRadians(destinationLongitude);
+
