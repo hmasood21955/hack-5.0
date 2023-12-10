@@ -27,3 +27,5 @@ double lorentzTimeDilation(double t, double percentC) {
         return -1.0; 
     }
 
+    double v = percentC * SPEED_OF_LIGHT;
+
