@@ -14,3 +14,5 @@ double getAirDistance(double originLatitude, double originLongitude, double dest
     destinationLatitude = toRadians(destinationLatitude);
     destinationLongitude = toRadians(destinationLongitude);
 
+    double latitudeDifference = destinationLatitude - originLatitude;
+    double longitudeDifference = destinationLongitude - originLongitude;
