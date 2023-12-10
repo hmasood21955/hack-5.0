@@ -14,3 +14,8 @@ int main() {
     printf("Test Case 2:\nExpected: %.2f km\nActual: %.2f km\n", expectedDistance2, airDistance2);
     printf("Result: %s\n\n", (fabs(airDistance2 - expectedDistance2) < 0.01) ? "Passed" : "Failed");
 
+    double airDistance3 = getAirDistance(51.5074, -0.1278, 48.8566, 2.3522);
+    double expectedDistance3 = 343.94;
+    printf("Test Case 3:\nExpected: %.2f km\nActual: %.2f km\n", expectedDistance3, airDistance3);
+    printf("Result: %s\n\n", (fabs(airDistance3 - expectedDistance3) < 0.01) ? "Passed" : "Failed");
+
