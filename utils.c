@@ -16,3 +16,6 @@ double getAirDistance(double originLatitude, double originLongitude, double dest
 
     double latitudeDifference = destinationLatitude - originLatitude;
     double longitudeDifference = destinationLongitude - originLongitude;
+
+    double distance = acos(sin(originLatitude) * sin(destinationLatitude) + cos(originLatitude) * cos(destinationLatitude) * cos(longitudeDifference)) * EARTH_RADIUS;
+
