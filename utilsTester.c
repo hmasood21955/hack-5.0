@@ -19,3 +19,8 @@ int main() {
     printf("Test Case 3:\nExpected: %.2f km\nActual: %.2f km\n", expectedDistance3, airDistance3);
     printf("Result: %s\n\n", (fabs(airDistance3 - expectedDistance3) < 0.01) ? "Passed" : "Failed");
 
+    double dilatedTime1 = lorentzTimeDilation(1.0, 0.25);
+    double expectedDilatedTime1 = 1.032796;
+    printf("Test Case 1:\nExpected: %.6f units\nActual: %.6f units\n", expectedDilatedTime1, dilatedTime1);
+    printf("Result: %s\n\n", (fabs(dilatedTime1 - expectedDilatedTime1) < 0.000001) ? "Passed" : "Failed");
+
