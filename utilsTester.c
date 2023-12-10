@@ -29,3 +29,10 @@ int main() {
     printf("Test Case 2:\nExpected: %.6f units\nActual: %.6f units\n", expectedDilatedTime2, dilatedTime2);
     printf("Result: %s\n\n", (fabs(dilatedTime2 - expectedDilatedTime2) < 0.000001) ? "Passed" : "Failed");
 
+    double dilatedTime3 = lorentzTimeDilation(5.0, 0.50);
+    double expectedDilatedTime3 = 7.745967;
+    printf("Test Case 3:\nExpected: %.6f units\nActual: %.6f units\n", expectedDilatedTime3, dilatedTime3);
+    printf("Result: %s\n\n", (fabs(dilatedTime3 - expectedDilatedTime3) < 0.000001) ? "Passed" : "Failed");
+
+    return 0;
+}
