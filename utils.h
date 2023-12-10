@@ -3,3 +3,5 @@
 
 double toRadians(double degree);
 
+double getAirDistance(double originLatitude, double originLongitude, double destinationLatitude, double destinationLongitude);
+
