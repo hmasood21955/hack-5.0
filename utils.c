@@ -22,3 +22,8 @@ double getAirDistance(double originLatitude, double originLongitude, double dest
     return distance; 
 }
 
+double lorentzTimeDilation(double t, double percentC) {
+    if (percentC < 0.0 || percentC >= 1.0) {
+        return -1.0; 
+    }
+
